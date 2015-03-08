@@ -1,0 +1,23 @@
+{
+  "name": "Ftu initial design",
+  "version": "0.1.0",
+  "authors": [
+    "Stefan <korun_stefan@hotmail.com>"
+  ],
+  "description": "Initial design for the FTU site",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.1",
+
+    "bootstrap": "^3.3"
+  }
+}
