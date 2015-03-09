@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "jquery": "^2.1",
+    "bx-slider.js": "^4.2",
+    "jquery.unslider": "^1.0",
 
     "bootstrap": "^3.3"
   }

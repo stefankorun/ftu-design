@@ -2,14 +2,19 @@
 <html>
 <head lang="mk">
     <meta charset="UTF-8">
-    <title></title>
+    <title>ФТУ - Почетна</title>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="http://unslider.com/unslider.min.js"></script>
+    <script src="bower_components/bx-slider.js/dist/jquery.bxslider.js"></script>
+    <script src="js/main.js"></script>
+
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic'
           rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bx-slider.js/dist/jquery.bxslider.css" rel="stylesheet">
     <link href="less/main.css" rel="stylesheet">
 </head>
 <body>
@@ -19,6 +24,13 @@
         <div class="container">
             <div class="site-name">
                 Факултет за туризам и угостителство
+            </div>
+            <div class="header-social">
+                <div class="facebook">
+                    <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ftu.uklo.edu.mk%2F&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21&amp;appId=561235810646565"
+                            scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;"
+                            allowTransparency="true"></iframe>
+                </div>
             </div>
             <div class="quick-menu">
                 <ul>
@@ -31,16 +43,35 @@
         </div>
     </div>
     <div class="main-header container">
-        <div class="site-logo pull-left">
-            <img src="images/main-logo.gif">
+        <div class="header-logo pull-left">
+            <img src="images/main-logo.gif" class="pull-left">
+            <div class="header-shortname">
+                ФТУ
+            </div>
         </div>
-        <div class="site-shortname pull-left">
-            ФТУ
+        <div class="header-menu">
+            <ul>
+                <li><a href="#">За факултетот</a></li>
+                <li><a href="#">Кадар</a></li>
+                <li>
+                    <a href="#">Студии</a>
+                    <ul>
+                        <li><a href="#">Додипломски</a></li>
+                        <li><a href="#">Магистерски</a></li>
+                        <li><a href="#">Докторски</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Истражувања</a></li>
+            </ul>
         </div>
     </div>
 </header>
 <div class="main-content container">
-    ovde glavni raboti
+    <ul class="bxslider">
+        <li>This is a slide.</li>
+        <li>This is another slide.</li>
+        <li>This is a final slide.</li>
+    </ul>
 </div>
 <footer></footer>
 
