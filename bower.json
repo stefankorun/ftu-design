@@ -20,6 +20,7 @@
     "bx-slider.js": "^4.2",
     "jquery.unslider": "^1.0",
 
-    "bootstrap": "^3.3"
+    "bootstrap": "^3.3",
+    "fontawesome": "^4.3"
   }
 }

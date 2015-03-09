@@ -2,6 +2,7 @@ header {
   position: relative;
 }
 header .top-header {
+  position: relative;
   background: #183883;
   color: #ffffff;
   font-size: 0.9em;
@@ -13,17 +14,8 @@ header .top-header .site-name {
   font-size: 1em;
   font-weight: bold;
 }
-header .top-header .header-social {
-  float: right;
-  padding-left: 10px;
-}
-header .top-header .header-social .facebook {
-  margin-top: 3px;
-  width: 80px;
-  overflow: hidden;
-}
 header .top-header .quick-menu {
-  float: right;
+  float: left;
 }
 header .top-header .quick-menu ul {
   padding-left: 0;
@@ -41,6 +33,32 @@ header .top-header .quick-menu ul li a {
   color: #ffffff;
   cursor: pointer;
 }
+header .top-header .header-social {
+  float: right;
+}
+header .top-header .header-social .facebook {
+  margin-top: 3px;
+  width: 80px;
+  overflow: hidden;
+}
+header .top-header .search {
+  position: relative;
+  float: right;
+  background: #337ab7;
+}
+header .top-header .search input {
+  outline: none;
+  border: none;
+  height: 28px;
+  padding: 0 5px;
+  color: #EFEFEF;
+  background: inherit;
+}
+header .top-header .search i {
+  color: #183883;
+  font-size: 18px;
+  padding-right: 5px;
+}
 header .main-header {
   position: relative;
 }
@@ -48,11 +66,11 @@ header .main-header .header-logo img {
   border-radius: 0 0 10px 10px;
 }
 header .main-header .header-logo .header-shortname {
-  padding: 10px;
+  padding: 8px;
   margin: 0;
   float: left;
   color: #183883;
-  font-size: 3.2em;
+  font-size: 1.7em;
   line-height: 1em;
   font-weight: 300;
   letter-spacing: 5px;
@@ -74,10 +92,9 @@ header .main-header .header-menu > ul {
 header .main-header .header-menu > ul > li {
   display: inline-block;
   padding: 30px 30px 10px 30px;
-  background: rgba(209, 218, 239, 0.9);
+  background: rgba(218, 221, 230, 0.9);
   vertical-align: top;
   border-radius: 0 0 5px 5px;
-  font-weight: bold;
 }
 header .main-header .header-menu > ul > li:hover ul {
   height: auto;
