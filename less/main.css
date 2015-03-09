@@ -7,8 +7,10 @@ header .top-header {
   font-size: 0.9em;
 }
 header .top-header .site-name {
-  padding: 5px;
+  margin: 0;
+  padding: 6px 0;
   float: left;
+  font-size: 1em;
   font-weight: bold;
 }
 header .top-header .header-social {
@@ -47,6 +49,7 @@ header .main-header .header-logo img {
 }
 header .main-header .header-logo .header-shortname {
   padding: 10px;
+  margin: 0;
   float: left;
   color: #183883;
   font-size: 3.2em;
@@ -70,8 +73,8 @@ header .main-header .header-menu > ul {
 }
 header .main-header .header-menu > ul > li {
   display: inline-block;
-  padding: 30px 20px 10px 20px;
-  background: rgba(209, 218, 239, 0.7);
+  padding: 30px 30px 10px 30px;
+  background: rgba(209, 218, 239, 0.9);
   vertical-align: top;
   border-radius: 0 0 5px 5px;
   font-weight: bold;
@@ -101,6 +104,24 @@ header .main-header .header-menu > ul > li ul {
   margin-top: 10px;
   overflow: auto;
 }
+.main-content .content-slider .single-slide {
+  position: relative;
+  height: 300px;
+}
+.main-content .content-slider .single-slide .image {
+  height: 100%;
+}
+.main-content .content-slider .single-slide .caption {
+  height: 100%;
+}
+.main-content .content-slider .single-slide .caption .title {
+  margin-top: 10px;
+  color: #183883;
+  font-size: 1.5em;
+}
+.main-content .content-slider .single-slide .caption .description {
+  padding: 10px 20px 10px 0;
+}
 .main-content .banner {
   position: relative;
   overflow: auto;
@@ -113,5 +134,5 @@ header .main-header .header-menu > ul > li ul {
 }
 body {
   font-family: "Open Sans", Verdana, sans-serif;
-  background-color: #EFEFEF;
+  background: #EFEFEF;
 }
