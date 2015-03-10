@@ -68,6 +68,7 @@ header .top-header .search i {
 header .main-header {
   position: relative;
   background-color: #ffffff;
+  box-shadow: 0 -1px 2px #183883;
 }
 header .main-header .header-logo img {
   border-radius: 0 0 10px 10px;
@@ -147,6 +148,12 @@ header .main-header .header-menu > ul > li ul {
 .main-content .content-slider .single-slide .caption .description {
   padding: 10px 20px 10px 0;
 }
+.main-content .content-articles {
+  padding: 5px;
+  background: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #CCC;
+}
 .main-content .banner {
   position: relative;
   overflow: auto;
@@ -156,6 +163,27 @@ header .main-header .header-menu > ul > li ul {
 }
 .main-content .banner ul li {
   float: left;
+}
+footer {
+  margin-top: 50px;
+  color: #EFEFEF;
+  background: #337ab7;
+  box-shadow: 0 1px 6px #183883;
+}
+footer .footer-content {
+  min-height: 100px;
+}
+footer .footer-content .contact .title {
+  padding: 5px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+footer .footer-content .contact .info {
+  font-size: 0.9em;
+}
+footer .copyright {
+  padding-top: 20px;
+  font-size: 0.9em;
 }
 body {
   font-family: "Open Sans", Verdana, sans-serif;
