@@ -1,7 +1,6 @@
 .main-content {
   position: relative;
   margin-top: 25px;
-  overflow: auto;
 
   .content-slider {
     .single-slide {
@@ -26,11 +25,47 @@
     }
   }
   .content-articles {
-    padding: 5px;
+    overflow: hidden;
+    padding: 15px;
     background: #ffffff;
     border-radius: 2px;
     box-shadow: 0 0 5px #CCC;
+
+    .single-article {
+      height: 200px;
+      margin-bottom: 15px;
+//      border: 1px solid #EFEFEF;
+      border-radius: 2px;
+
+      .title {
+        font-size: 1.4em;
+      }
+      .date {
+        font-style: italic;
+        font-size: 0.9em;
+        color: lighten(@color-font-primary, 40%);
+      }
+      .description {
+        padding-top: 10px;
+        font-size: 0.9em;
+        text-align: justify;
+        color: lighten(@color-font-primary, 20%);
+      }
+    }
   }
+
+  .content-sidebar {
+    .sidebar-item {
+      margin-bottom: 10px;
+      text-align: right;
+
+      img {
+        max-height: 70px;
+        max-width: 100%;
+      }
+    }
+  }
+
 
   // unislider
   .banner { position: relative; overflow: auto; }
