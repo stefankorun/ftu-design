@@ -1,23 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head lang="mk">
-  <meta charset="UTF-8">
-  <title>ФТУ - Почетна</title>
-
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="bower_components/bx-slider.js/dist/jquery.bxslider.js"></script>
-  <script src="js/main.js"></script>
-
-
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic' rel='stylesheet'>
-  <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-  <link href="bower_components/fontawesome/css/font-awesome.css" rel="stylesheet">
-  <link href="bower_components/bx-slider.js/dist/jquery.bxslider.css" rel="stylesheet">
-  <link href="main.css" rel="stylesheet">
-</head>
-<body>
-
 <header>
   <div class="top-header">
     <div class="container">
@@ -71,7 +51,7 @@
   </div>
 </header>
 <div class="main-content container">
-  <div class="content-slider">
+  <div class="content-slider" style="display: none;">
     <ul class="bxslider">
       <li>
         <div class="single-slide row">
@@ -216,5 +196,3 @@
     </div>
   </div>
 </footer>
-</body>
-</html>
