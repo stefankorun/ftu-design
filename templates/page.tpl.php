@@ -1,26 +1,9 @@
 <header>
   <div class="top-header">
     <div class="container">
-      <div class="quick-menu">
-        <ul>
-          <li><a>iKnow</a></li>
-          <li><a>Студентски сервиси</a></li>
-          <li><a>Огласна табла</a></li>
-          <li><a>Најава</a></li>
-        </ul>
-      </div>
-      <div class="search">
-        <input type="text">
-        <i class="fa fa-search"></i>
-      </div>
-      <div class="header-social">
-        <div class="facebook">
-          <iframe
-            src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ftu.uklo.edu.mk%2F&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21&amp;appId=561235810646565"
-            scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;"
-            allowTransparency="true"></iframe>
-        </div>
-      </div>
+      <?php print render($page['quick_menu']); ?>
+      <?php print render($page['search']); ?>
+      <?php print render($page['social_links']); ?>
     </div>
   </div>
   <div class="main-header">
@@ -28,9 +11,24 @@
       <div class="header-logo pull-left">
         <img src="images/main-logo.gif" class="pull-left">
 
-        <h1 class="header-shortname">
-          Факултет за туризам <br/> и угостителство
-        </h1>
+<!--        <h1 class="header-shortname">-->
+<!--          Факултет за туризам <br/> и угостителство-->
+<!--        </h1>-->
+        <?php if ($site_slogan): ?>
+          <?php if ($title): ?>
+            <div class="header-sitename">
+              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+                <span><?php print $site_slogan; ?></span>
+              </a>
+            </div>
+          <?php else: /* Use h1 when the content title is empty */ ?>
+            <h1 class="header-sitename">
+              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+                <span><?php print $site_slogan; ?></span>
+              </a>
+            </h1>
+          <?php endif; ?>
+        <?php endif; ?>
       </div>
       <div class="header-menu">
         <ul>
