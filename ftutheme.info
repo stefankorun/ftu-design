@@ -20,6 +20,8 @@ scripts[] = 'js/main.js'
 regions[quick_menu] = Quick Menu
 regions[social_links] = Social links
 regions[search] = Search
+regions[main_menu] = Main Menu
+
 ; default
 regions[header] = Header
 regions[navigation] = Navigation bar

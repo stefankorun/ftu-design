@@ -10,10 +10,6 @@
     <div class="container">
       <div class="header-logo pull-left">
         <img src="images/main-logo.gif" class="pull-left">
-
-<!--        <h1 class="header-shortname">-->
-<!--          Факултет за туризам <br/> и угостителство-->
-<!--        </h1>-->
         <?php if ($site_slogan): ?>
           <?php if ($title): ?>
             <div class="header-sitename">
@@ -30,21 +26,22 @@
           <?php endif; ?>
         <?php endif; ?>
       </div>
-      <div class="header-menu">
-        <ul>
-          <li><a href="#">За факултетот</a></li>
-          <li><a href="#">Кадар</a></li>
-          <li>
-            <a href="#">Студии</a>
-            <ul>
-              <li><a href="#">Додипломски</a></li>
-              <li><a href="#">Магистерски</a></li>
-              <li><a href="#">Докторски</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Истражувања</a></li>
-        </ul>
-      </div>
+      <?php print render($page['main_menu']); ?>
+      <!--<div class="header-menu">-->
+        <!--<ul>-->
+          <!--<li><a href="#">За факултетот</a></li>-->
+          <!--<li><a href="#">Кадар</a></li>-->
+          <!--<li>-->
+            <!--<a href="#">Студии</a>-->
+            <!--<ul>-->
+              <!--<li><a href="#">Додипломски</a></li>-->
+              <!--<li><a href="#">Магистерски</a></li>-->
+              <!--<li><a href="#">Докторски</a></li>-->
+            <!--</ul>-->
+          <!--</li>-->
+          <!--<li><a href="#">Истражувања</a></li>-->
+        <!--</ul>-->
+      <!--</div>-->
     </div>
   </div>
 </header>
