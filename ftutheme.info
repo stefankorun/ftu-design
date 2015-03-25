@@ -22,6 +22,8 @@ regions[social_links] = Social links
 regions[search] = Search
 regions[main_menu] = Main Menu
 
+regions[notice_board] = Notice Board
+
 ; default
 regions[header] = Header
 regions[navigation] = Navigation bar

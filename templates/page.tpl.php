@@ -11,36 +11,36 @@
       <div class="header-logo pull-left">
         <img src="images/main-logo.gif" class="pull-left">
         <?php if ($site_slogan): ?>
-          <?php if ($title): ?>
-            <div class="header-sitename">
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-                <span><?php print $site_slogan; ?></span>
-              </a>
-            </div>
-          <?php else: /* Use h1 when the content title is empty */ ?>
-            <h1 class="header-sitename">
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-                <span><?php print $site_slogan; ?></span>
-              </a>
-            </h1>
-          <?php endif; ?>
+        <?php if ($title): ?>
+        <div class="header-sitename">
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+            <span><?php print $site_slogan; ?></span>
+          </a>
+        </div>
+        <?php else: /* Use h1 when the content title is empty */ ?>
+        <h1 class="header-sitename">
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+            <span><?php print $site_slogan; ?></span>
+          </a>
+        </h1>
+        <?php endif; ?>
         <?php endif; ?>
       </div>
       <?php print render($page['main_menu']); ?>
       <!--<div class="header-menu">-->
-        <!--<ul>-->
-          <!--<li><a href="#">За факултетот</a></li>-->
-          <!--<li><a href="#">Кадар</a></li>-->
-          <!--<li>-->
-            <!--<a href="#">Студии</a>-->
-            <!--<ul>-->
-              <!--<li><a href="#">Додипломски</a></li>-->
-              <!--<li><a href="#">Магистерски</a></li>-->
-              <!--<li><a href="#">Докторски</a></li>-->
-            <!--</ul>-->
-          <!--</li>-->
-          <!--<li><a href="#">Истражувања</a></li>-->
-        <!--</ul>-->
+      <!--<ul>-->
+      <!--<li><a href="#">За факултетот</a></li>-->
+      <!--<li><a href="#">Кадар</a></li>-->
+      <!--<li>-->
+      <!--<a href="#">Студии</a>-->
+      <!--<ul>-->
+      <!--<li><a href="#">Додипломски</a></li>-->
+      <!--<li><a href="#">Магистерски</a></li>-->
+      <!--<li><a href="#">Докторски</a></li>-->
+      <!--</ul>-->
+      <!--</li>-->
+      <!--<li><a href="#">Истражувања</a></li>-->
+      <!--</ul>-->
       <!--</div>-->
     </div>
   </div>
@@ -88,7 +88,8 @@
   <div class="row">
     <div class="col-sm-8">
       <div class="content-articles">
-        <div class="header">Огласна табла</div>
+        <?php print render($page['notice_board']); ?>
+        <!--<div class="header">Огласна табла</div>
         <div class="col-sm-6">
           <div class="single-article">
             <div class="title">
@@ -152,7 +153,7 @@
               со практичен дел на факултетите за туризам.
             </div>
           </div>
-        </div>
+        </div>-->
       </div>
     </div>
     <div class="content-sidebar col-sm-4">
