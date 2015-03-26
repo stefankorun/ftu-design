@@ -16,29 +16,31 @@ scripts[] = 'bower_components/bx-slider.js/dist/jquery.bxslider.js'
 scripts[] = 'js/main.js'
 
 ; REGIONS
-; custom
+; -custom
+; --header
 regions[quick_menu] = Quick Menu
 regions[social_links] = Social links
 regions[search] = Search
 regions[main_menu] = Main Menu
-
+; --main
+regions[side_menu_nav] = Side Menu Navigation
+regions[content] = Content
 regions[notice_board] = Notice Board
+; --footer
+regions[footer] = Footer
 
-; default
+; -default
 regions[header] = Header
 regions[navigation] = Navigation bar
 regions[highlighted] = Highlighted
 regions[help] = Help
-regions[content] = Content
 regions[sidebar_first] = First sidebar
 regions[sidebar_second] = Second sidebar
-regions[footer] = Footer
 regions[bottom] = Page bottom
 
 
 ; The page_top and page_bottom regions are hidden, which means they will not
 ; show up on the blocks administration page. But they are required in order for
 ; the html.tpl.php to work properly, so do not delete them.
-
 regions[page_top]       = Page top
 regions[page_bottom]    = Page bottom
