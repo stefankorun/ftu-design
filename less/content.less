@@ -2,76 +2,80 @@
   position: relative;
   margin-top: 45px;
 
-  .content-slider {
-    .single-slide {
-      position: relative;
-      height: 300px;
+  .front-page-content {
 
-      .image {
-        height: 100%;
+    .content-slider {
+      .single-slide {
+        position: relative;
+        height: 300px;
+
+        .image {
+          height: 100%;
+        }
+        .caption {
+          height: 100%;
+
+          .title {
+            margin-top: 10px;
+            color: @color-dark;
+            font-size: 1.5em;
+          }
+          .description {
+            padding: 10px 20px 10px 0;
+          }
+        }
       }
-      .caption {
-        height: 100%;
+    }
+    .content-articles {
+      overflow: hidden;
+      padding: 15px;
+      background: #ffffff;
+      border-radius: 2px;
+      box-shadow: 0 0 5px #CCC;
+      font-size: 0.9em;
+
+      .header, h2 {
+        margin: -15px;
+        margin-bottom: 15px;
+        padding: 10px 30px;
+        background: #EFEFEF;
+        box-shadow: 0 0 4px #BDBDBD;
+
+        font-size: 1.1em;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .single-article {
+        height: 200px;
+        margin-bottom: 15px;
+        //      border: 1px solid #EFEFEF;
+        border-radius: 2px;
 
         .title {
-          margin-top: 10px;
-          color: @color-dark;
-          font-size: 1.5em;
+          font-size: 1.4em;
+        }
+        .date {
+          font-style: italic;
+          font-size: 0.9em;
+          color: lighten(@color-font-primary, 40%);
         }
         .description {
-          padding: 10px 20px 10px 0;
+          padding-top: 10px;
+          font-size: 0.9em;
+          text-align: justify;
+          color: lighten(@color-font-primary, 20%);
         }
       }
     }
-  }
-  .content-articles {
-    overflow: hidden;
-    padding: 15px;
-    background: #ffffff;
-    border-radius: 2px;
-    box-shadow: 0 0 5px #CCC;
+    .content-sidebar {
+      .sidebar-item {
+        margin-bottom: 10px;
+        text-align: right;
 
-    .header {
-      margin: -15px;
-      margin-bottom: 15px;
-      padding: 10px 30px;
-      background: #EFEFEF;
-      box-shadow: 0 0 4px #BDBDBD;
-
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-    .single-article {
-      height: 200px;
-      margin-bottom: 15px;
-      //      border: 1px solid #EFEFEF;
-      border-radius: 2px;
-
-      .title {
-        font-size: 1.4em;
-      }
-      .date {
-        font-style: italic;
-        font-size: 0.9em;
-        color: lighten(@color-font-primary, 40%);
-      }
-      .description {
-        padding-top: 10px;
-        font-size: 0.9em;
-        text-align: justify;
-        color: lighten(@color-font-primary, 20%);
-      }
-    }
-  }
-
-  .content-sidebar {
-    .sidebar-item {
-      margin-bottom: 10px;
-      text-align: right;
-
-      img {
-        max-height: 70px;
-        max-width: 100%;
+        img {
+          max-height: 70px;
+          max-width: 100%;
+        }
       }
     }
   }

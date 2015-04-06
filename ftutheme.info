@@ -23,7 +23,7 @@ regions[social_links] = Social links
 regions[search] = Search
 regions[main_menu] = Main Menu
 ; --main
-regions[side_menu_nav] = Side Menu Navigation
+regions[sidebar_left] = Left Sidebar
 regions[content] = Content
 regions[notice_board] = Notice Board
 ; --footer
