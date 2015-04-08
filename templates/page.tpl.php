@@ -9,7 +9,7 @@
   <div class="main-header">
     <div class="container">
       <div class="header-logo pull-left">
-        <img src="<?php print drupal_get_path('theme', 'ftutheme') ?>/images/main-logo.gif" class="pull-left">
+        <img src="<?php print $logo ?>" class="pull-left">
         <?php if ($site_slogan): ?>
         <?php if ($title): ?>
         <div class="header-sitename">
@@ -102,10 +102,16 @@
       <?php print render($page['sidebar_left']); ?>
     </div>
     <div class="col-sm-9">
-      <div class="drupal-content-wrapper"></div>
+      <div class="drupal-content-wrapper">
         <?php if ($page['highlighted']): ?>
         <div id="highlighted"><?php print render($page['highlighted']); ?></div>
         <?php endif; ?>
+
+        <?php if ($tabs): ?>
+        <div class="tabs"><?php print render($tabs); ?></div>
+        <?php endif; ?>
+
+        <?php print render($page['help']); ?>
 
         <?php print render($title_prefix); ?>
 
@@ -114,12 +120,6 @@
         <?php endif; ?>
 
         <?php print render($title_suffix); ?>
-
-        <?php if ($tabs): ?>
-        <div class="tabs"><?php print render($tabs); ?></div>
-        <?php endif; ?>
-
-        <?php print render($page['help']); ?>
 
         <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>

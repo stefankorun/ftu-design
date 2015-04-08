@@ -1,10 +1,11 @@
 .main-content {
   position: relative;
-  margin-top: 45px;
 
   .front-page-content {
+    margin-top: 45px;
 
     .content-slider {
+
       .single-slide {
         position: relative;
         height: 300px;
@@ -76,6 +77,109 @@
           max-height: 70px;
           max-width: 100%;
         }
+      }
+    }
+  }
+
+  .not-front-page-content {
+    margin-top: 20px;
+
+    .region-sidebar-left {
+
+      .block {
+        background: #ffffff;
+        margin-top: 42px;
+        box-shadow: 0 0 3px #CCC;
+
+        h2 {
+          margin: 0;
+          padding: 10px;
+          background: #EFEFEF;
+          box-shadow: 0 1px 1px #CFCFCF;
+
+          font-size: 0.9em;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        &#block-menu-block-2 .content {
+
+          ul.menu {
+            margin: 0;
+            padding: 0;
+
+            li {
+              margin: 0;
+              list-style: none none;
+            }
+          }
+          /* first level settings */
+          .menu-level-2 > ul.menu {
+
+            > li {
+              padding: 10px;
+              border-left: 2px solid fade(@color-light, 40%);
+              transition: 0.3s all;
+
+              &.active {
+                border-left-color: fade(@color-light, 80%);
+                padding: 15px;
+                font-size: 1.2em;
+              }
+              &:hover:not(.active) {
+                padding: 12px;
+              }
+
+              /* second level settings */
+              > ul {
+                padding-left: 15px;
+                font-size: 0.85em;
+              }
+            }
+          }
+        }
+        &#block-views-notice-board-block-block-side .content {
+
+          .views-row {
+            padding: 8px;
+            font-size: 0.9em;
+            border-bottom: 1px dashed #BBB;
+
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+    .drupal-content-wrapper {
+
+      > .title {
+        z-index: -1;
+        position: relative;
+        overflow: auto;
+        display: inline-block;
+        margin: 0 0px -12px 20px;
+        padding: 3px 70px 12px 30px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 0 6px #CCC;
+        border-radius: 1px;
+
+        color: #183883;
+        font-size: 2.3em;
+        font-weight: 800;
+
+
+        @media screen and (max-device-width: 400px) {
+          font-size: 1.7em;
+          padding: 3px 30px 12px 30px;
+        }
+      }
+
+      .region-content {
+        background: #ffffff;
+        padding: 25px;
+        box-shadow: 0 0 5px #BABABA;
       }
     }
   }
