@@ -36,61 +36,14 @@
   <?php if($is_front) : ?>
   <!-- FRONT PAGE CONTENT -->
   <div class="front-page-content">
-    <div class="content-slider" style="display: none;">
-      <ul class="bxslider">
-        <li>
-          <div class="single-slide row">
-            <div class="image col-sm-8">
-              <img src="images/temp/EMI_2949.jpg">
-            </div>
-            <div class="caption col-sm-4">
-              <div class="title">Премиерот во посета на Факултетот за Туризам и Угостителство</div>
-              <div class="description">
-                Вишата угостителско-туристичка школа во Охрид, се формира со Одлука на
-                Здруженото угостителско-туристичко стопанство на СРМ. Оваа школа е единствена Виша школа
-                во Македонија која имаше за цел едуцирање на стручни кадри од областа на угостителството
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="single-slide row">
-            <div class="image col-sm-8">
-              <img src="images/temp/sveti-jovan.jpg">
-            </div>
-            <div class="caption col-sm-4">
-              <div class="title">Промоција на градот Охрид и други работи</div>
-              <div class="description">
-                Охрид — град во југозападниот дел на Македонија со 42.033 жители.
-                По него Охридското Езеро го носи своето име.
-                Охрид и Охридското Езеро се едни од главните туристички места во Македонија.
-                Поради големиот број на цркви и манастири, градот е познат како Балкански и Европски
-                Ерусалим.
-                Охрид е познат и како „град на светлината“ што претставува буквален превод на неговото старо
-                име, Лихнид.
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>This is a final slide.</li>
-      </ul>
-    </div>
     <div class="row">
       <div class="col-sm-8">
         <div class="content-articles">
           <?php print render($page['notice_board']); ?>
         </div>
       </div>
-      <div class="content-sidebar col-sm-4">
-        <div class="sidebar-item">
-          <img src="images/temp/uklo.png">
-        </div>
-        <div class="sidebar-item">
-          <img src="images/temp/sileks.png">
-        </div>
-        <div class="sidebar-item">
-          <img src="images/temp/metropol.png">
-        </div>
+      <div class="col-sm-4">
+        <?php print render($page['sidebar_right']); ?>
       </div>
     </div>
   </div>

@@ -23,9 +23,12 @@ regions[social_links] = Social links
 regions[search] = Search
 regions[main_menu] = Main Menu
 ; --main
-regions[sidebar_left] = Left Sidebar
-regions[content] = Content
+; ---front page
 regions[notice_board] = Notice Board
+regions[sidebar_right] = Right Sidebar (front-page)
+; ---content page
+regions[content] = Content
+regions[sidebar_left] = Left Sidebar (content-page)
 ; --footer
 regions[footer] = Footer
 
@@ -34,8 +37,6 @@ regions[header] = Header
 regions[navigation] = Navigation bar
 regions[highlighted] = Highlighted
 regions[help] = Help
-regions[sidebar_first] = First sidebar
-regions[sidebar_second] = Second sidebar
 regions[bottom] = Page bottom
 
 
