@@ -4,29 +4,6 @@
   .front-page-content {
     margin-top: 45px;
 
-    .content-slider {
-
-      .single-slide {
-        position: relative;
-        height: 300px;
-
-        .image {
-          height: 100%;
-        }
-        .caption {
-          height: 100%;
-
-          .title {
-            margin-top: 10px;
-            color: @color-dark;
-            font-size: 1.5em;
-          }
-          .description {
-            padding: 10px 20px 10px 0;
-          }
-        }
-      }
-    }
     .content-articles {
       overflow: hidden;
       padding: 15px;
@@ -68,19 +45,42 @@
         }
       }
     }
-    .content-sidebar {
-      .sidebar-item {
-        margin-bottom: 10px;
-        text-align: right;
+    .region-sidebar-right {
 
-        img {
-          max-height: 70px;
-          max-width: 100%;
+      .block {
+        background: #ffffff;
+        margin-bottom: 20px;
+        box-shadow: 0 0 3px #CCC;
+
+        h2 {
+          margin: 0;
+          padding: 10px;
+          background: #EFEFEF;
+          box-shadow: 0 1px 1px #CFCFCF;
+
+          font-size: 0.9em;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+
+      /* COLABORATORS BLOCK */
+      #block-views-collaborators-block .content {
+        .views-row {
+          padding: 5px 10px;
+
+          .views-field-field-referal-image {
+            text-align: center;
+
+            img {
+              max-width: 100%;
+              max-height: 70px;
+            }
+          }
         }
       }
     }
   }
-
 
   .not-front-page-content {
     margin-top: 20px;
@@ -169,7 +169,6 @@
         color: #183883;
         font-size: 2.3em;
         font-weight: 800;
-
 
         @media screen and (max-device-width: 400px) {
           margin-top: 30px;
