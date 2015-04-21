@@ -8,5 +8,11 @@ $(function () {
    fluid: false              //  Support responsive design. May break non-responsive designs
    });*/
 
-  $('.bxslider').bxSlider();
+  //$('.bxslider').bxSlider();
+
+  $('.region-main-slider #block-views-notice-board-block-block-slider .view-content').slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 1
+  });
 });

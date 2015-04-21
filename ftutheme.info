@@ -5,14 +5,15 @@ core = 7.x
 ; CSS
 stylesheets[all][] = 'bower_components/bootstrap/dist/css/bootstrap.css'
 stylesheets[all][] = 'bower_components/fontawesome/css/font-awesome.css'
-stylesheets[all][] = 'bower_components/bx-slider.js/dist/jquery.bxslider.css'
+stylesheets[all][] = 'bower_components/slick-carousel/slick/slick.css'
+stylesheets[all][] = 'bower_components/slick-carousel/slick/slick-theme.css'
 stylesheets[all][] = 'main.css'
 
 ; JS
 scripts[] = 'bower_components/jquery/dist/jquery.js'
 scripts[] = 'bower_components/jquery-migrate/index.js'
 scripts[] = 'bower_components/bootstrap/dist/js/bootstrap.js'
-scripts[] = 'bower_components/bx-slider.js/dist/jquery.bxslider.js'
+scripts[] = 'bower_components/slick-carousel/slick/slick.min.js'
 scripts[] = 'js/main.js'
 
 ; REGIONS
@@ -24,6 +25,7 @@ regions[search] = Search
 regions[main_menu] = Main Menu
 ; --main
 ; ---front page
+regions[main_slider] = Main Slider
 regions[notice_board] = Notice Board
 regions[sidebar_right] = Right Sidebar (front-page)
 ; ---content page

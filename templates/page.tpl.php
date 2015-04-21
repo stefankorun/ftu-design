@@ -36,11 +36,10 @@
   <?php if($is_front) : ?>
   <!-- FRONT PAGE CONTENT -->
   <div class="front-page-content">
+    <?php print render($page['main_slider']); ?>
     <div class="row">
       <div class="col-sm-8">
-        <div class="content-articles">
-          <?php print render($page['notice_board']); ?>
-        </div>
+        <?php print render($page['notice_board']); ?>
       </div>
       <div class="col-sm-4">
         <?php print render($page['sidebar_right']); ?>

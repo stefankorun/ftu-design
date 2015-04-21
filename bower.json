@@ -20,8 +20,8 @@
     "jquery-migrate": "http://code.jquery.com/jquery-migrate-1.2.1.js",
     "bx-slider.js": "^4.2",
     "jquery.unslider": "^1.0",
-
     "bootstrap": "^3.3",
-    "fontawesome": "^4.3"
+    "fontawesome": "^4.3",
+    "slick-carousel": "^1.5"
   }
 }

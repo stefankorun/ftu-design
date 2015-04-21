@@ -4,7 +4,38 @@
   .front-page-content {
     margin-top: 45px;
 
-    .content-articles {
+    .region-main-slider {
+      padding-bottom: 30px;
+
+      #block-views-notice-board-block-block-slider .view-content {
+        .views-row {
+          height: 210px;
+          margin: 3px;
+          background: #FFF;
+          box-shadow: 0 0 3px #BABABA;
+
+          .views-field-field-image {
+            display: inline-block;
+            overflow: hidden;
+            height: 100%;
+            width: 40%;
+
+            .field-content, img {
+              width: auto;
+              height: 100%;
+            }
+          }
+          .views-field-body {
+            display: inline-block;
+            vertical-align: top;
+            width: 55%;
+            padding: 10px;
+          }
+        }
+      }
+    }
+
+    .region-notice-board {
       overflow: hidden;
       padding: 15px;
       background: #ffffff;
