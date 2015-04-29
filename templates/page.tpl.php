@@ -8,7 +8,7 @@
   </div>
   <div class="main-header">
     <div class="container">
-      <div class="header-logo pull-left">
+      <div class="header-logo">
         <img src="<?php print $logo ?>" class="pull-left">
         <?php if ($site_slogan): ?>
         <?php if ($title): ?>

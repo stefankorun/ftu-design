@@ -103,21 +103,40 @@ header {
       z-index: 10;
 
       .menu-block-wrapper {
+        ul, li {
+          padding: 0;
+          margin: 0;
+        }
+
         & > ul {
+          display: table;
           padding-left: 0;
           margin-bottom: 0;
-          list-style: none;
+          text-align: center;
 
-          & > li {
-            display: inline-block;
-            padding: 25px 30px;
-            vertical-align: top;
+          &:hover {
+            background: fadeout(@color-light, 35%);
+            box-shadow: 0 0 3px fadeout(@color-dark, 80%);
 
-            &:hover {
-              background-color: fadeout(@color-dark, 90%);
+            & > li {
+              a {
+                color: #FFFFFF;
+              }
               ul {
                 height: auto;
-                padding-top: 10px;
+              }
+            }
+          }
+
+          & > li {
+            display: table-cell;
+            padding: 25px 30px;
+            width: 180px;
+
+            &:hover {
+              background: rgba(255, 255, 255, 0.9);
+              a {
+                color: @color-dark;
               }
             }
             a {
@@ -132,11 +151,15 @@ header {
               height: 0;
               overflow: hidden;
               padding-left: 0;
+              margin-top: 25px;
               margin-bottom: 0;
-              list-style: none;
-
               font-size: 0.8em;
               font-weight: normal;
+              text-align: center;
+
+              li {
+                padding: 5px 0;
+              }
             }
           }
         }
