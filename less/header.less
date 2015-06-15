@@ -94,6 +94,7 @@ header {
         }
       }
     }
+
     .region-main-menu {
       position: relative;
       float: right;
@@ -115,13 +116,10 @@ header {
           text-align: center;
 
           &:hover {
-            background: fadeout(@color-light, 35%);
+            background: fadeout(#FFFFFF, 35%);
             box-shadow: 0 0 3px fadeout(@color-dark, 80%);
 
             & > li {
-              a {
-                color: #FFFFFF;
-              }
               ul {
                 height: auto;
               }
@@ -134,7 +132,7 @@ header {
             width: 180px;
 
             &:hover {
-              background: rgba(255, 255, 255, 0.9);
+              background: rgba(230, 230, 230, 0.8);
               a {
                 color: @color-dark;
               }

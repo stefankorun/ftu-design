@@ -1,3 +1,5 @@
+@import "course-program";
+
 .main-content {
   position: relative;
 
@@ -6,6 +8,8 @@
 
     .region-main-slider {
       padding-bottom: 30px;
+      max-height: 280px;
+      overflow: hidden;
 
       #block-views-notice-board-block-block-slider .view-content {
         .views-row {
@@ -151,7 +155,7 @@
             > li {
               padding: 10px;
               border-left: 2px solid fade(@color-light, 40%);
-              transition: 0.3s all;
+              transition: 0.2s all;
 
               &.active-trail {
                 border-left-color: fade(@color-light, 80%);
