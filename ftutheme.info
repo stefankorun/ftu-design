@@ -19,6 +19,7 @@ scripts[] = 'js/main.js'
 ; REGIONS
 ; -custom
 ; --header
+regions[notification_message] = Notification message
 regions[quick_menu] = Quick Menu
 regions[social_links] = Social links
 regions[search] = Search

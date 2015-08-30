@@ -1,4 +1,7 @@
 <header>
+  <div class="notification-message">
+    <?php print render($page['notification_message']); ?>
+  </div>
   <div class="top-header">
     <div class="container">
       <?php print render($page['quick_menu']); ?>
