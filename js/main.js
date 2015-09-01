@@ -13,6 +13,8 @@ $(function () {
   $('.region-main-slider #block-views-notice-board-block-block-slider .view-content').slick({
     arrows: false,
     dots: true,
-    slidesToShow: 1
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 5000
   });
 });
