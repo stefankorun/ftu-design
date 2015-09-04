@@ -22,17 +22,6 @@
           background: #FFF;
           box-shadow: 0 0 3px #BABABA;
 
-          @media @break-mobile {
-            font-size: 0.8em;
-
-            .views-field-field-image {
-              display: none;
-            }
-            .views-field-body {
-              width: auto;
-            }
-          }
-
           .views-field-field-image {
             display: inline-block;
             overflow: hidden;
@@ -50,6 +39,17 @@
             width: 55%;
             padding: 10px;
             cursor: default;
+          }
+
+          @media @break-mobile {
+            font-size: 0.8em;
+
+            .views-field-field-image {
+              display: none;
+            }
+            .views-field-body {
+              width: auto;
+            }
           }
         }
       }
