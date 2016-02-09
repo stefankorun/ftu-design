@@ -5,30 +5,54 @@ header {
     position: relative;
     background: @color-dark;
     color: #ffffff;
-
     font-size: 0.9em;
+
+    a {
+      color: #ffffff;
+      cursor: pointer;
+    }
 
     .region-quick-menu {
       float: left;
 
-      ul.menu {
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
+      #block-locale-language {
+        display: inline-block;
+        margin-right: 30px;
 
-        li.leaf {
-          display: inline-block;
-          padding: 5px;
+        ul.language-switcher-locale-url {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
 
-          &:hover {
-            background: rgba(255, 255, 255, 0.25);
-          }
-          a {
-            color: #ffffff;
-            cursor: pointer;
+          li {
+            display: inline-block;
+            padding: 5px;
+
+            &.active {
+              display: none;
+            }
           }
         }
       }
+      #block-menu-menu-quick-links {
+        display: inline-block;
+
+        ul.menu {
+          padding-left: 0;
+          margin-bottom: 0;
+          list-style: none;
+
+          li.leaf {
+            display: inline-block;
+            padding: 5px;
+
+            &:hover {
+              background: rgba(255, 255, 255, 0.25);
+            }
+          }
+        }
+      }
+
     }
     .region-social-links {
       float: right;
